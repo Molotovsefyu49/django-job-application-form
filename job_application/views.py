@@ -3,6 +3,7 @@ from .forms import ApplicationForm
 from .models import Form
 from django.contrib import messages
 
+
 def index(request):
     if request.method == "POST":
         form = ApplicationForm(request.POST)
